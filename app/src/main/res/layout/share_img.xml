@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="1080px"
+              android:layout_height="1920px"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_share_bg">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:layout_marginLeft="440px"
+            android:layout_marginTop="100px"
+            android:src="@drawable/ic_share_logo"/>
+
+        <TextView
+            android:id="@+id/tv_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_logo"
+            android:layout_marginTop="30px"
+            android:gravity="center"
+            android:text="@string/msg_share"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_coupon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_share"
+            android:layout_marginTop="30dp">
+
+            <LinearLayout
+                android:id="@+id/ll_header"
+                android:layout_width="880px"
+                android:layout_height="326px"
+                android:layout_marginLeft="100px"
+                android:layout_marginRight="100px"
+                android:layout_marginTop="@dimen/dp_25"
+                android:background="@drawable/ic_coupon_header"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="70px"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="搜索好友"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_14"/>
+
+                    <TextView
+                        android:id="@+id/tv_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_2"
+                        android:text="文字"
+                        android:textColor="#f4c611"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ID"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp_14"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/dp_5"
+                    android:layout_marginTop="5px"
+                    android:text="10000"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="10000"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_bottom"
+                android:layout_width="880px"
+                android:layout_height="120px"
+                android:layout_below="@+id/ll_header"
+                android:layout_marginLeft="100px"
+                android:layout_marginRight="100px"
+                android:background="@drawable/ic_coupon_bottom"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分享抽iPhone X手机"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14"/>
+            </RelativeLayout>
+
+            <com.chehubang.duolejie.widget.CircleImageView
+                android:id="@+id/iv_header"
+                android:layout_width="140px"
+                android:layout_height="140px"
+                android:layout_marginLeft="465px"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_qr"
+            android:layout_width="350px"
+            android:layout_height="350px"
+            android:layout_below="@+id/rl_coupon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginTop="100px"/>
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/iv_qr"
+            android:layout_marginBottom="150px"
+            android:layout_marginLeft="100px"
+            android:layout_marginRight="100px"
+            android:gravity="center"
+            android:text="@string/msg_share_show"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14"/>
+    </RelativeLayout>
+
+</LinearLayout>

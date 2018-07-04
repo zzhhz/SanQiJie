@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:animateLayoutChanges="true"
+        android:background="@android:color/white"
+        android:paddingTop="25dp">
+
+        <TextView
+            android:id="@+id/tv_category_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:drawableLeft="@drawable/nav_left"
+            android:drawablePadding="8dp"
+            android:padding="10dp"
+            android:text="返回"
+            android:textColor="@android:color/white"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:id="@+id/tv_category_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="参与抽奖记录"
+            android:textColor="@color/titleColor"
+            android:textSize="17dp"/>
+
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

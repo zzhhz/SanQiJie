@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">多乐街</string>
+    <string name="scroll_behavior">@string/appbar_scrolling_view_behavior</string>
+
+    <string name="qv_add">+</string>
+    <string name="qv_remove">-</string>
+    <string name="input_password">请输入密码</string>
+    <string name="msg_code">会收到一条含有6位数字验证码的短信</string>
+    <string name="msg_share">好友邀请您参与，欢乐抽大奖。\n六位好友参与疯抢最高4999元！</string>
+    <string name="msg_share_show">长按二维码或在应用商店下载 \'多乐街\' \n搜索好友ID即可参与 | 上市公司联合出品</string>
+    <string name="msg_gift">请你到个人中心页面点击抽奖记录查看本期参与抽奖活动的结果。如果状态显示进行中，即表示人员未满员系统尚未开奖。</string>
+    <string name="msg_shao_gift">您的多乐券余额不足，请先在多乐街线上线下消费后由系统赠送多乐券后才可以参与抽奖活动</string>
+</resources>

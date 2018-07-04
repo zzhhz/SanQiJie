@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="#eeeeee" />
+
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_11"
+                android:text="新用户免费参与"
+                android:textColor="@color/result_view"
+                android:textSize="15dp" />
+
+
+            <TextView
+                android:id="@+id/item_tv_my_gift_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_toRightOf="@+id/id_num"
+                android:text="期号：001503"
+                android:textColor="@color/result_view"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/project_detail_item" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_item_my_gift"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="@dimen/dp_11"
+                android:layout_marginTop="@dimen/dp_18"
+                android:layout_marginRight="@dimen/dp_20"
+                android:scaleType="fitXY"
+                android:layout_centerVertical="true"
+                android:src="@drawable/piccjjl" />
+
+            <TextView
+                android:id="@+id/tv_item_my_gift_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_alignLeft="@+id/tv_item_my_gift_passengers"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/tv_item_my_gift_passengers"
+                android:text=""
+                android:textColor="#666666"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_item_my_gift_passengers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_item_my_gift_title"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/iv_item_my_gift"
+                android:text="总需要：7人次"
+                android:textColor="#666666"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_bg_pink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_item_my_gift_passengers"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/iv_item_my_gift"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="进度"
+                    android:textColor="#666666" />
+
+                <ProgressBar
+                    android:id="@+id/pb_my_gift_progressbar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="150dp"
+                    android:layout_height="7.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_toRightOf="@+id/tv_progressbar"
+                    android:max="100"
+                    android:progressDrawable="@drawable/progressbar" />
+
+                <TextView
+                    android:id="@+id/item_my_tv_pregress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:textColor="@color/red" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_my_need_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_bg_pink"
+                android:layout_marginLeft="@dimen/dp_120"
+                android:layout_toRightOf="@+id/iv_item_my_gift"
+                android:text="还需2人次"
+                android:textColor="#999999"
+                android:textSize="10sp" />
+
+
+            <Button
+                android:id="@+id/btn_item_my_gift_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/tv_my_need_people"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_11"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/iv_item_my_gift"
+                android:background="@color/red"
+                android:text="确认参与"
+                android:layout_marginBottom="@dimen/dp_15"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

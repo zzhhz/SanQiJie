@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@android:color/white"
+        android:paddingTop="@dimen/dp_25">
+
+        <ImageView
+            android:id="@+id/tv_bind_card_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/nav_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_horizontal"
+            android:text="绑定加油卡"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+    </FrameLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:text="请输入加油卡号"
+        android:textColor="#4c4c4c"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/et_oil_card_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="35dp"
+        android:gravity="center_horizontal"
+        android:hint="仅支持中石化/中石油个人记名主卡" />
+
+
+    <TextView
+        android:id="@+id/tv_oil_card_commit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#d9483c"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="副卡、车队卡、不记名卡、中油BP卡等不能充值" />
+
+    <TextView
+        android:id="@+id/tv_bind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:gravity="center_horizontal"
+        android:text="如何办理加油卡？"
+        android:textColor="#d9483c" />
+
+
+</LinearLayout>

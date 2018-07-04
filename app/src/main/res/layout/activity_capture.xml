@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_68"
+        android:animateLayoutChanges="true"
+        android:background="@android:color/white"
+        android:paddingTop="@dimen/dp_20">
+
+        <ImageView
+            android:id="@+id/iv_scan_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@drawable/nav_left" />
+
+        <TextView
+            android:id="@+id/tv_normal_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:maxEms="7"
+            android:singleLine="true"
+            android:text="扫描二维码"
+            android:textColor="@color/titleColor"
+            android:textSize="18dp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_my_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

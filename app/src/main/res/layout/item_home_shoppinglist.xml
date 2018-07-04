@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_shopping_item_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f4f4f4"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="@color/white">
+        <LinearLayout
+            android:id="@+id/ll_shopping_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_5"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_shopping_select"
+                style="@style/CustomCheckboxTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="@dimen/dp_10" />
+
+            <ImageView
+                android:id="@+id/iv_shopping_pic"
+                android:layout_width="80dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerInside"
+                android:src="@drawable/forget_pwd_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_commodity_name_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="酒红色纯红色纯羊毛西服套装"
+                    android:textColor="#666666"
+                    android:textSize="12dp" />
+
+
+                <TextView
+                    android:id="@+id/tv_commodity_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="蓝色：M码"
+                    android:textColor="#999999"
+                    android:textSize="10dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp">
+
+                    <TextView
+                        android:id="@+id/tv_commodity_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="￥390"
+                        android:textColor="#d9483c"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <com.chehubang.duolejie.widget.QuantityView
+                        android:id="@+id/av_shopping"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        app:qv_quantity="1"
+                        app:qv_addButtonText="  +  "
+                        app:qv_addButtonTextColor="@color/titleColor"
+                        app:qv_addButtonBackground="@color/white"
+                        app:qv_removeButtonText="  -  "
+                        app:qv_removeButtonTextColor="@color/white"
+                        app:qv_removeButtonBackground="#d9483c"/>
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <TextView
+
+                android:id="@+id/item_delete"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:background="#88ff0000"
+                android:gravity="center"
+                android:text="删除"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginTop="@dimen/dp_5"
+            android:background="#eeeeee"></View>
+    </LinearLayout>
+
+</LinearLayout>

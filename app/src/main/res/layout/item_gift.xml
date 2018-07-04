@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:focusable="true"
+              android:paddingBottom="@dimen/dp_3"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical">
+
+    <View
+        android:id="@+id/v_s"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_5"
+        android:background="#eeeeee"/>
+
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/id_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_11"
+                android:text="2卷区"
+                android:textColor="@color/result_view"
+                android:textSize="15sp"
+                android:visibility="gone"/>
+
+
+            <TextView
+                android:id="@+id/item_tv_gift_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_toRightOf="@+id/id_num"
+                android:text="期号：001503"
+                android:textColor="#666666"
+                android:textSize="16sp"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/project_detail_item"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/iv_item_gift"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_20"
+                android:scaleType="fitXY"
+                android:layout_centerVertical="true"
+                android:src="@drawable/piccjjl"/>
+
+            <TextView
+                android:id="@+id/tv_item_gift_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_item_gift_passengers"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/tv_item_gift_passengers"
+                android:layout_marginTop="@dimen/dp_15"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text=""
+                android:textColor="#666666"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/tv_item_gift_passengers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_item_gift_title"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/iv_item_gift"
+                android:text="总需：7人次"
+                android:textColor="#666666"
+                android:textSize="13sp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_bg_pink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_item_gift_passengers"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/iv_item_gift"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="进度"
+                    android:textColor="#777777"/>
+
+                <ProgressBar
+                    android:id="@+id/pb_gift_progressbar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="150dp"
+                    android:layout_height="7.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_toRightOf="@+id/tv_progressbar"
+                    android:max="100"
+                    android:progressDrawable="@drawable/progressbar"/>
+
+                <TextView
+                    android:id="@+id/item_tv_pregress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_15"
+                    android:textColor="@color/red"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_need_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_bg_pink"
+                android:layout_marginLeft="@dimen/dp_120"
+                android:layout_toRightOf="@+id/iv_item_gift"
+                android:text="还需2人次"
+                android:layout_marginTop="3dp"
+                android:textColor="#999999"
+                android:textSize="10sp"/>
+
+
+            <com.chehubang.duolejie.widget.QuantityView
+                android:id="@+id/amount_view"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@+id/tv_need_people"
+                android:layout_gravity="right"
+                android:layout_marginBottom="@dimen/dp_15"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/iv_item_gift"
+                app:qv_addButtonText="  +  "
+                app:qv_quantity="1"
+                app:qv_removeButtonBackground="@color/red"
+                app:qv_removeButtonText="  -  "
+                app:qv_removeButtonTextColor="@color/white"
+                app:qv_quantityPadding="@dimen/dp_15"/>
+
+
+            <Button
+                android:id="@+id/btn_item_gift_confirm"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/tv_need_people"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginRight="@dimen/dp_11"
+                android:layout_marginTop="5dp"
+                android:background="@color/red"
+                android:text="确认"
+                android:layout_marginBottom="@dimen/dp_15"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

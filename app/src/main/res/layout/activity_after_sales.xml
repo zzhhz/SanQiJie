@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_68"
+        android:animateLayoutChanges="true"
+        android:paddingTop="@dimen/dp_20">
+
+        <ImageView
+            android:id="@+id/iv_after_sales_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:src="@drawable/nav_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:maxEms="7"
+            android:singleLine="true"
+            android:text="售后/退换"
+            android:textColor="@color/titleColor"
+            android:textSize="18dp" />
+
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/lv_after_sales_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="@dimen/dp_0.1"
+        android:divider="#f3f3f3"/>
+
+</LinearLayout>

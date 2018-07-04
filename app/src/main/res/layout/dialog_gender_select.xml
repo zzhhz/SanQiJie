@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_14"
+    android:layout_marginBottom="@dimen/dp_14"
+    android:paddingRight="@dimen/dp_14"
+    android:paddingLeft="@dimen/dp_14">
+    <TextView
+        android:id="@+id/tv_dial_gender_cancel"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="取消"
+        android:textSize="@dimen/dp_17"
+        android:textColor="@color/nav_bg_color"/>
+
+    <TextView
+        android:id="@+id/tv_dial_gender_save"
+        android:layout_gravity="center_vertical|end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="完成"
+        android:textSize="@dimen/dp_17"
+        android:textColor="@color/nav_bg_color"/>
+</FrameLayout>
+
+    <common.view.widget.NumberPickerView
+        android:id="@+id/np_gender_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#f3f3f3"
+        android:contentDescription="test_number_picker_view"
+        app:npv_ItemPaddingVertical="15dp"
+        app:npv_ShowCount="3"
+        app:npv_DividerColor="#dddddd"
+        app:npv_TextSizeNormal="@dimen/dp_15"
+        app:npv_TextColorNormal="#666666"
+        app:npv_TextColorSelected="#333333"
+        app:npv_TextSizeSelected="@dimen/dp_17"
+        app:npv_WrapSelectorWheel="true"/>
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/gv_home_icon"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="@dimen/dp_10"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/self_operation"
+            android:drawablePadding="@dimen/dp_3"
+            android:gravity="center_vertical"
+            android:text="自营品牌"
+            android:textColor="#FC6764"
+            android:textSize="@dimen/sp_10"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/self_operation"
+            android:drawablePadding="@dimen/dp_3"
+            android:gravity="center_vertical"
+            android:text="30天无忧退货"
+            android:textColor="#FC6764"
+            android:textSize="@dimen/sp_10"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/self_operation"
+            android:drawablePadding="@dimen/dp_3"
+            android:gravity="center_vertical"
+            android:text="正品直营"
+            android:textColor="#FC6764"
+            android:textSize="@dimen/sp_10"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_home_icon_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/cont_class"
+            android:drawablePadding="@dimen/dp_5"
+            android:gravity="center"
+            android:text="全部分类"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_12"/>
+
+        <TextView
+            android:id="@+id/tv_home_icon_car"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/cont_ten"
+            android:drawablePadding="@dimen/dp_5"
+            android:gravity="center"
+            android:text="车生活"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_12"/>
+
+        <TextView
+            android:id="@+id/tv_home_icon_charge"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/cont_show"
+            android:gravity="center"
+            android:text="充值中心"
+            android:drawablePadding="@dimen/dp_5"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_12"/>
+
+        <TextView
+            android:id="@+id/tv_home_icon_service"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/cont_qa"
+            android:drawablePadding="@dimen/dp_5"
+            android:gravity="center"
+            android:text="附近服务"
+            android:textColor="#666666"
+            android:textSize="@dimen/sp_12"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_13"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/much_joy_to_street"/>
+
+        <ViewFlipper
+            android:id="@+id/tv_marquee"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:autoStart="true"
+            android:flipInterval="2000"
+            android:inAnimation="@anim/push_up_in"
+            android:outAnimation="@anim/push_up_out"
+            android:textSize="@dimen/dp_12">
+
+        </ViewFlipper>
+
+    </LinearLayout>
+
+
+</LinearLayout>

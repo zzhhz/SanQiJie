@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_68"
+            android:animateLayoutChanges="true"
+            android:background="@android:color/white"
+            android:paddingTop="@dimen/dp_20">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:src="@drawable/nav_left"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:maxEms="7"
+                android:singleLine="true"
+                android:text="加油卡"
+                android:textColor="#666666"
+                android:textSize="18dp"/>
+
+
+        </FrameLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:background="#eeeeee"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center|top"
+                        android:src="@drawable/come_on_card"/>
+
+                    <TextView
+                        android:id="@+id/gas_filling_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:background="#d9483c"
+                        android:gravity="center"
+                        android:text="点击绑定加油卡"
+                        android:textColor="#ffffff"
+                        android:textSize="16dp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_gas_record_introduction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:text="还没有加油卡?"
+                    android:textColor="#e17169"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="点击选择购油金额"
+                    android:textColor="#7d7d7d"
+                    android:textSize="16sp"/>
+
+                <com.chehubang.duolejie.widget.IconGridView
+                    android:id="@+id/igv_gas_record_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:horizontalSpacing="10dp"
+                    android:numColumns="3"
+                    android:verticalSpacing="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="13dp"
+                    android:text="说明事项"
+                    android:textColor="#a7a7a7"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="1. 副卡、增值税发票卡不支持在线购买；"
+                    android:textColor="#a7a7a7"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="2. 暂不提供开具发票；"
+                    android:textColor="#a7a7a7"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="3. 购买成功后20秒到账第一期油款；95折油卡"
+                    android:textColor="#a7a7a7"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="4. 购买成功后，请在加油前交给工作人员划卡圈存；"
+                    android:textColor="#a7a7a7"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="5. 仅支持中国石油、中国石化签发的加油卡主卡。"
+                    android:textColor="#a7a7a7"
+                    android:textSize="12sp"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_gas_filling_contract"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_13"
+                        android:layout_height="@dimen/dp_13"
+                        android:background="@drawable/shape_corner"
+                        android:src="@drawable/yes"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:text="同意 《加油卡服务协议》"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="累计已为"
+                        android:textColor="#9f9f9f"/>
+
+                    <TextView
+                        android:id="@+id/tv_gas_record_person"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textColor="#dd5f55"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="人提供服务充值"
+                        android:textColor="#9f9f9f"/>
+
+                    <TextView
+                        android:id="@+id/tv_gas_record_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1元"
+                        android:textColor="#dd5f55"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_lettory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="充值可获取0多乐券"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="3dp"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/tv_gas_record_select_money"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="7"
+                android:background="@drawable/gridview_shape"
+                android:gravity="center"
+                android:text="0元"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/tv_buy_commit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#d9483c"
+                android:gravity="center"
+                android:text="立即购买"
+                android:textColor="#ffffff"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

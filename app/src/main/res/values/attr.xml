@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RecyclerViewBanner">
+        <attr name="rvb_interval" format="integer" />
+        <attr name="rvb_showIndicator" format="boolean" />
+        <attr name="rvb_indicatorSelectedSrc" format="color|reference" />
+        <attr name="rvb_indicatorUnselectedSrc" format="color|reference" />
+        <attr name="rvb_indicatorSize" format="dimension|reference" />
+        <attr name="rvb_indicatorSpace" format="dimension|reference" />
+        <attr name="rvb_indicatorMargin" format="dimension|reference" />
+        <attr name="rvb_indicatorGravity" format="enum">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <attr name="rvb_autoPlaying" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="AmountView">
+        <!-- 左右2边+-按钮的宽度 -->
+        <attr name="btnWidth" format="dimension" />
+        <!-- 中间TextView的宽度 -->
+        <attr name="tvWidth" format="dimension" />
+        <!--<attr name="tvColor" format="color"/>-->
+        <attr name="tvTextSize" format="dimension"/>
+        <attr name="btnTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="QuantityView">
+        <attr name="qv_addButtonText" format="string" />
+        <attr name="qv_addButtonBackground" format="color|reference" />
+        <attr name="qv_addButtonTextColor" format="color" />
+
+        <attr name="qv_removeButtonText" format="string" />
+        <attr name="qv_removeButtonBackground" format="color|reference" />
+        <attr name="qv_removeButtonTextColor" format="color" />
+
+        <attr name="qv_quantity" format="integer" />
+        <attr name="qv_quantityDialog" format="boolean" />
+        <attr name="qv_quantityBackground" format="color|reference" />
+        <attr name="qv_quantityTextColor" format="color" />
+        <attr name="qv_quantityPadding" format="dimension" />
+
+        <attr name="qv_maxQuantity" format="integer" />
+        <attr name="qv_minQuantity" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="FluidLayout">
+        <attr name="gravity" >
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="center" value="0x11" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="FluidLayout_Layout">
+        <attr name="layout_gravity">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="center" value="0x11" />
+        </attr>
+    </declare-styleable>
+</resources>

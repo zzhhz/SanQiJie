@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:animateLayoutChanges="true"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:paddingTop="25dp">
+
+        <TextView
+            android:id="@+id/tv_goodsdetails_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:drawableLeft="@drawable/nav_left"
+            android:drawablePadding="8dp"
+            android:padding="10dp"
+            android:text="返回"
+            android:textColor="@android:color/white"
+            android:textSize="17dp"/>
+
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp_60"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_goods_details_goods"
+                android:layout_width="58dp"
+                android:layout_height="28dp"
+                android:background="#999999"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="商品"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/rb_goods_details"
+                android:layout_width="58dp"
+                android:layout_height="28dp"
+                android:background="#fff"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="详情"
+                android:textColor="@color/titleColor"/>
+        </RadioGroup>
+
+        <!-- <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="right|center_vertical"
+             android:layout_marginRight="10dp"
+             android:clickable="true"
+             android:paddingRight="14dp"
+             android:src="@drawable/home" />
+
+         <ImageView
+             android:id="@+id/iv_category_right"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="right|center_vertical"
+             android:layout_marginRight="10dp"
+             android:clickable="true"
+             android:paddingLeft="14dp"
+             android:src="@drawable/sharing" />-->
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_goods_details_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
